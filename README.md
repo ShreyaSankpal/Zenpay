@@ -1,108 +1,390 @@
-# 💸 ZENPAY
+#  ZENPAY
 
-> **Pay Smart. Save Smarter.**  
-> A UPI-first payments app that puts a smart budget layer between you and every transaction — so spending never outruns your money.
+> **Pay Smart. Save Smarter.**
 
-**🔗 Explore ZenPay — https://vercel.app**
+A UPI-first digital payments platform with a smart budgeting and transaction-protection layer designed to help users understand, control, and protect their everyday spending.
 
-***🚩 The Problem:***
-Musa Codex Hackathon — FinTech & Digital Payments
+**🌐 Live Demo:** [ZenPay](https://zenpay-gamma.vercel.app/)
+**👥 Team:** Hacksmith
 
-Everyday money management in India breaks down in a handful of very specific, very human ways:
-* **The Interest Rate Nobody Explained (CX0501)** — borrowers agree to EMIs and credit terms without understanding the real cost of interest until it's too late.
-* **Split the Bill, Save the Friendship (CX0502)** — group expenses (rent, trips, dinners) turn into awkward math and awkward conversations.
-* **The EMI That Ate the Salary (CX0503)** — recurring EMIs silently eat 40–60% of take-home pay, leaving no room for savings or emergencies.
-* **The Chit Fund That Vanished Overnight (CX0504)** — informal savings schemes offer zero transparency and no digital trail.
-* **The Subsidy That Slipped Through (CX0505)** — eligible users miss government subsidies and benefits because they never see them surfaced at the point of payment.
-* **Credit Score for the Invisible (CX0506)** — gig workers and first-time earners have no formal credit history, locking them out of loans.
-* **The Fraudulent Refund Loop (CX0507)** — refund and chargeback scams exploit trust in UPI's speed and irreversibility.
-* **Cash Flow Blind Spot (CX0508)** — most people can't see, in real time, how much they can safely spend today without wrecking the rest of the month.
+---
 
-**🚀 Our Solution: ZenPay**
-ZenPay isn't just another UPI wrapper — it's a spending firewall. Every payment passes through a budget-aware layer before it's confirmed, so the app can warn, split, track, or block before money moves, not after.
+## 🚩 The Problem
 
-**Key Features**
-* **UPI Payments** — send and receive money through a simulated/integrated UPI flow.
-* **Daily Spending Limits** — set a safe daily cap; the app tracks live spend against it.
-* **Smart Budgeting**— categorize expenses and see where money is actually going, in real time.
-***Money Protection Layer** — before any UPI transfer is confirmed, ZenPay checks it against your daily limit, your recent spending pattern, and known refund/scam signatures (new payee + urgent request, repeat refund attempts, amount far above your usual range). Risky transactions are held with a one-tap "Are you sure?" confirmation instead of going through silently.
+Digital payments have made transactions faster, but managing money responsibly is still difficult.
 
-**📸 Platform Showcase**
+Users often face problems such as:
 
-**1. The Heart (Smart Dashboard)**
-One number, updated live — your Daily Pulse tells you exactly what's safe to spend, today.
+* **Cash Flow Blind Spot** — People don't know how much they can safely spend today without affecting the rest of the month.
+* **The EMI That Ate the Salary** — Recurring payments can consume a large portion of monthly income without users noticing the long-term impact.
+* **Split the Bill, Save the Friendship** — Group expenses such as trips, rent, and dinners create unnecessary calculation and settlement friction.
+* **Fraudulent Refund Requests** — Refund and payment scams exploit the speed and trust associated with digital payments.
+* **Credit Visibility Gap** — First-time earners and informal workers may have limited financial history.
+* **Missed Financial Benefits** — Users often don't discover relevant financial assistance, benefits, or savings opportunities at the right time.
 
-<img width="975" height="473" alt="image" src="https://github.com/user-attachments/assets/0f269c83-983c-44df-bccd-8d4496778d35" />
+The common problem is simple:
 
+> **People can make payments instantly, but they don't always have enough financial context before making them.**
 
-**2. The Guard (Protection Layer)**
-Intercepts risky payments at the point of intent — flags limit-breaking, unusual, or refund-fraud-shaped transactions with a plain-language warning before the money actually moves.
+---
 
-<img width="975" height="471" alt="image" src="https://github.com/user-attachments/assets/eb1e8787-7f3d-4fa7-8238-c2e592b6cbcd" />
+# 🚀 Our Solution
 
+**ZenPay** adds a smart financial decision layer around digital payments.
 
-**3. AI Architect (The Blueprint)**
-A legally-grounded 50/30/20 plan tailored to the user's city, tax laws, and risk profile.
+Instead of simply processing a transaction, ZenPay helps users understand its impact **before and after money moves**.
 
-<img width="975" height="471" alt="image" src="https://github.com/user-attachments/assets/973e84c7-758b-4132-bb83-18a40b129900" />
+The platform combines:
 
+* UPI payment flows
+* Daily spending limits
+* Real-time budget tracking
+* Expense categorization
+* Safe-to-Spend calculations
+* Transaction risk checks
+* Financial planning assistance
 
-**🤖 Key Features of Fraud Detection Systems in Digital Payments**
+The goal is to move from:
 
-<img width="901" height="819" alt="image" src="https://github.com/user-attachments/assets/ffd4fb75-edcf-48bc-ae72-15107a1d41ed" />
+**Pay → Track Later**
 
-**⚙️ How It Works (The Technical Brain)**
+to:
 
-**1. The Spend Guard Engine**
-Safe-to-Spend Today = (Remaining Budget) / (Days Left in Period)
-Every transaction re-checks this figure live, so the daily limit adjusts automatically the moment you overspend or underspend.
+**Understand → Decide → Pay → Track**
 
-**2. The Protection Layer**
-* Risk Detection: every outgoing payment is scored against three checks before it's confirmed: (1) does it blow past today's Safe-to-Spend figure, (2) does the payee/amount pattern match a known refund-fraud or chargeback-loop signature, (3) is it a sudden spike versus the user's rolling spend average. A transaction that trips any check is paused with a clear, plain-language warning instead of a generic OTP screen.
-* Adaptive Limits: the daily limit isn't static; it recalculates after every transaction based on remaining balance and days left, and tightens automatically after a flagged/overridden transaction so one risky payment doesn't cascade into a bad week.
+---
 
-***🛠️ Tech Stack***
-* Frontend: Next.js / React
-* Styling: Tailwind CSS / shadcn-ui
-* Backend / Database: Supabase, Postgres, Firebase
+# ✨ Key Features
 
-***🛠️ Local Setup***
-Prerequisites: Node.js (v18+)
+### 💳 UPI Payments
 
-Clone the Repository
+Send and receive money through a simulated/integrated UPI payment experience.
+
+### 💰 Smart Budgeting
+
+Categorize expenses and monitor where money is going in real time.
+
+### 📊 Daily Spending Limits
+
+Set a daily spending limit and track spending against the available amount.
+
+### 🛡️ Money Protection Layer
+
+Before a payment is confirmed, ZenPay checks the transaction against spending limits and behavioral signals.
+
+Potentially risky transactions can trigger a clear warning instead of silently proceeding.
+
+### 🧠 Safe-to-Spend
+
+ZenPay calculates an estimated amount the user can safely spend based on their remaining budget and remaining days in the budgeting period.
+
+### 🤖 AI Financial Planning
+
+Provides personalized budgeting guidance based on user-provided financial information, helping users structure their spending and savings goals.
+
+---
+
+# 📸 Platform Showcase
+
+## 1. 💓 The Heart — Smart Dashboard
+
+The dashboard provides a single, easy-to-understand view of the user's financial position.
+
+The **Daily Pulse** highlights the amount currently considered safe to spend while also displaying recent transactions and spending information.
+
+<img width="975" height="473" alt="ZenPay Smart Dashboard" src="https://github.com/user-attachments/assets/0f269c83-983c-44df-bccd-8d4496778d35" />
+
+---
+
+## 2. 🛡️ The Guard — Protection Layer
+
+The Protection Layer evaluates transactions before confirmation.
+
+It can flag situations such as:
+
+* Spending above the configured limit
+* Unusually large transactions
+* Sudden changes in spending behavior
+* Suspicious refund/payment patterns
+
+Instead of displaying a generic warning, ZenPay provides a simple explanation so the user can make an informed decision.
+
+<img width="975" height="471" alt="ZenPay Protection Layer" src="https://github.com/user-attachments/assets/eb1e8787-7f3d-4fa7-8238-c2e592b6cbcd" />
+
+---
+
+## 3. 🤖 AI Architect — Financial Blueprint
+
+The AI-powered planning experience generates a personalized financial structure based on the information provided by the user.
+
+It can help organize income into areas such as:
+
+* Needs
+* Wants
+* Savings
+* Financial goals
+
+<img width="975" height="471" alt="ZenPay AI Financial Planner" src="https://github.com/user-attachments/assets/973e84c7-758b-4132-bb83-18a40b129900" />
+
+---
+
+# 🔍 Transaction Risk Detection
+
+ZenPay's protection system uses multiple signals to identify potentially risky transactions.
+
+Examples include:
+
+| Signal              | Purpose                                                                     |
+| ------------------- | --------------------------------------------------------------------------- |
+| Spending Limit      | Detects transactions exceeding the user's configured limit                  |
+| Safe-to-Spend       | Checks whether the transaction could negatively affect the remaining budget |
+| Spending Pattern    | Detects unusual increases compared with previous spending                   |
+| Transaction Context | Evaluates suspicious payment or refund patterns                             |
+| Payee Behavior      | Considers unusual or unexpected payment activity                            |
+
+A transaction that triggers a risk condition can be paused and presented with a **plain-language warning** before confirmation.
+
+<img width="901" height="819" alt="ZenPay Fraud Detection System" src="https://github.com/user-attachments/assets/ffd4fb75-edcf-48bc-ae72-15107a1d41ed" />
+
+> **Note:** These checks are implemented as product-level risk signals and should not be interpreted as a replacement for production-grade banking or fraud-detection infrastructure.
+
+---
+
+# ⚙️ How It Works
+
+## 1. Spend Guard Engine
+
+ZenPay calculates the user's current safe spending amount using the remaining budget and remaining days in the budgeting period.
+
+### Formula
+
+```text
+Safe-to-Spend Today =
+Remaining Budget / Days Left in Period
+```
+
+The calculation is updated as transactions occur.
+
+For example:
+
+```text
+Remaining Budget = ₹10,000
+Days Remaining = 10
+
+Safe-to-Spend Today = ₹10,000 / 10
+                     = ₹1,000
+```
+
+If the user spends ₹500, the remaining budget changes and the calculation is updated accordingly.
+
+---
+
+## 2. Protection Layer
+
+Every outgoing transaction can pass through multiple checks before confirmation.
+
+### Risk Checks
+
+```text
+1. Does the transaction exceed the Safe-to-Spend amount?
+
+2. Is the transaction significantly larger than the user's
+   normal spending pattern?
+
+3. Does the transaction resemble a suspicious
+   payment/refund pattern?
+```
+
+If a transaction triggers a risk condition:
+
+```text
+Transaction
+     ↓
+Risk Evaluation
+     ↓
+ ┌───────────────┐
+ │   Low Risk    │ → Continue Payment
+ └───────────────┘
+
+ ┌───────────────┐
+ │ Potential Risk│ → Warning → User Decision
+ └───────────────┘
+```
+
+This creates a **decision point before payment**, rather than simply showing users what happened after the money was already spent.
+
+---
+
+## 3. Adaptive Budgeting
+
+The user's available spending amount changes dynamically as transactions occur.
+
+```text
+Payment
+   ↓
+Update Spending
+   ↓
+Recalculate Remaining Budget
+   ↓
+Recalculate Safe-to-Spend
+   ↓
+Update Dashboard
+```
+
+This allows the budgeting layer to respond to actual spending instead of relying on a fixed daily number.
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+
+### Backend & Data
+
+* Supabase
+* PostgreSQL
+* Firebase
+
+### Deployment
+
+* Vercel
+
+---
+
+# 🗂️ Project Architecture
+
+```text
+ZENPAY
+│
+├── Frontend
+│   ├── Dashboard
+│   ├── UPI Payment Flow
+│   ├── Budget Management
+│   ├── Transactions
+│   └── AI Financial Planner
+│
+├── Smart Budget Engine
+│   ├── Daily Limits
+│   ├── Safe-to-Spend
+│   └── Spending Analysis
+│
+├── Protection Layer
+│   ├── Limit Checks
+│   ├── Spending Pattern Checks
+│   └── Transaction Risk Signals
+│
+└── Data Layer
+    ├── User Data
+    ├── Transactions
+    └── Budget Information
+```
+
+---
+
+# 🗺️ Accessing the Platform
+
+### Live Application
+
+**https://zenpay-gamma.vercel.app/**
+
+The application opens directly into the ZenPay experience.
+
+From the dashboard, users can:
+
+1. View their **Safe-to-Spend** amount
+2. Review recent transactions
+3. Send money through the UPI flow
+4. Configure their daily spending limit
+5. Monitor their budget
+6. Access financial planning features
+
+There is no separate marketing page required before accessing the core product experience.
+
+---
+
+# 🧪 Recommended Product Demo
+
+A simple way to demonstrate ZenPay's core value:
+
+1. Open the dashboard.
+2. Set a relatively low daily spending limit.
+3. Initiate a payment above the available spending threshold.
+4. Let the Protection Layer evaluate the transaction.
+5. Show the plain-language warning.
+6. Confirm the transaction to demonstrate that the system provides **decision support rather than silently blocking the user**.
+7. Return to the dashboard and show the updated spending information.
+
+This demonstrates the key product concept:
+
+> **ZenPay isn't only tracking spending — it helps users make better decisions before spending.**
+
+---
+
+# 🚀 Local Setup
+
+## Prerequisites
+
+* Node.js 18+
+* npm
+* Git
+
+## Clone the Repository
+
 ```bash
-git clone [your-repo-url]
+git clone [your-repository-url]
 cd zenpay
 ```
 
-Install Dependencies
+## Install Dependencies
+
 ```bash
 npm install
 ```
 
-Configure Environment Variables
-Create a .env.local file in the root and add your keys:
+## Configure Environment Variables
+
+Create a `.env.local` file in the project root.
+
 ```env
 [ENV_VAR_NAME]=your_key_here
 ```
 
-Run the Development Server
+Add the required environment variables for the services used by the project.
+
+## Run Development Server
+
 ```bash
 npm run dev
 ```
 
-***🗺️ Accessing the Platform***
-* **Live App:** **zenpay-gamma.vercel.app**
-* **Entry Point:** the app opens straight to the ZenPay home screen, showing today's Safe-to-Spend figure front and center along with recent transactions. From there, "Send Money" opens the UPI payment flow and "Set Daily Limit" opens the budget guard calibration — no separate landing/marketing page to click through first.
+Open:
 
-***Presentation Tip:** run a live UPI payment that deliberately exceeds the daily limit (or mimics a suspicious refund request) and let judges watch the Money Protection Layer intercept it in real time with a plain-language warning, before you confirm anyway to show the transaction still completing. That one interaction sells the "firewall, not just a tracker" pitch in under 20 seconds.
+```text
+http://localhost:3000
+```
 
-***👥 The Team : Hacksmiths***
+---
 
-| NAME | PROFILE |
-| :--- | :--- |
-| Pooja Santosh Sharma | https://linkedin.com |
-| Shreya Nitin Sankpal |https://www.linkedin.com/in/shreya-s-ba8113411/ |
-| Samarth Manish Shelar |https://www.linkedin.com/in/samarth-shelar-180718439/  |
+# 👥 Team — Hacksmith
 
-***Built for the Musa Codex Hackathon ❤️ — FinTech & Digital Payments.***
+| Name                      | Profile                                                           |
+| ------------------------- | ----------------------------------------------------------------- |
+| **Pooja Santosh Sharma**  | [LinkedIn](https://linkedin.com)                                  |
+| **Shreya Nitin Sankpal**  | [LinkedIn](https://www.linkedin.com/in/shreya-s-sh-ba8113411/)    |
+| **Samarth Manish Shelar** | [LinkedIn](https://www.linkedin.com/in/samarth-shelar-180718439/) |
+
+---
+
+## 💡 Product Vision
+
+ZenPay aims to make digital payments more financially aware.
+
+Instead of treating every transaction as an isolated payment, the platform considers the user's **budget, spending behavior, and financial context** to help them make better decisions.
+
+> **Pay Smart. Save Smarter.**
