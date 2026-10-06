@@ -1,4 +1,4 @@
-#  ZENPAY
+# ZENPAY
 
 > **Pay Smart. Save Smarter.**
 
@@ -132,15 +132,13 @@ It can help organize income into areas such as:
 
 ZenPay's protection system uses multiple signals to identify potentially risky transactions.
 
-Examples include:
-
-| Signal              | Purpose                                                                     |
-| ------------------- | --------------------------------------------------------------------------- |
-| Spending Limit      | Detects transactions exceeding the user's configured limit                  |
-| Safe-to-Spend       | Checks whether the transaction could negatively affect the remaining budget |
-| Spending Pattern    | Detects unusual increases compared with previous spending                   |
-| Transaction Context | Evaluates suspicious payment or refund patterns                             |
-| Payee Behavior      | Considers unusual or unexpected payment activity                            |
+| Signal                  | Purpose                                                                     |
+| ----------------------- | --------------------------------------------------------------------------- |
+| **Spending Limit**      | Detects transactions exceeding the user's configured limit                  |
+| **Safe-to-Spend**       | Checks whether the transaction could negatively affect the remaining budget |
+| **Spending Pattern**    | Detects unusual increases compared with previous spending                   |
+| **Transaction Context** | Evaluates suspicious payment or refund patterns                             |
+| **Payee Behavior**      | Considers unusual or unexpected payment activity                            |
 
 A transaction that triggers a risk condition can be paused and presented with a **plain-language warning** before confirmation.
 
@@ -373,15 +371,15 @@ http://localhost:3000
 
 # 👥 Team — Hacksmith
 
-| Name                      | Profile                                                           |
-| ------------------------- | ----------------------------------------------------------------- |
-| **Pooja Santosh Sharma**  | [LinkedIn](https://linkedin.com)                                  |
-| **Shreya Nitin Sankpal**  | [LinkedIn](https://www.linkedin.com/in/shreya-s-sh-ba8113411/)    |
-| **Samarth Manish Shelar** | [LinkedIn](https://www.linkedin.com/in/samarth-shelar-180718439/) |
+| Name                      |
+| ------------------------- |
+| **Pooja Santosh Sharma**  |
+| **Shreya Nitin Sankpal**  |
+| **Samarth Manish Shelar** |
 
 ---
 
-## 💡 Product Vision
+# 💡 Product Vision
 
 ZenPay aims to make digital payments more financially aware.
 
